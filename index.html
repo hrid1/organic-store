@@ -21,6 +21,15 @@
       rel="stylesheet"
     />
 
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--  -->
     <!-- custom tailwind style -->
 
     <script>
@@ -48,6 +57,50 @@
     </script>
   </head>
   <body class="font-Poppins">
-    <h1>Hello world</h1>
+    <!-- header-section -->
+    <header class="container mx-auto border">
+      <nav class=px-2>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <!-- logo -->
+            <a><img class="w-36 p-" src="./images/logo.svg" alt="" /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-semibold">
+              <li class="hover:text-accent"><a>Home</a></li>
+              <li class="hover:text-accent"><a>Everything</a></li>
+              <li class="hover:text-accent"><a>Groceries</a></li>
+              <li class="hover:text-accent"><a>About</a></li>
+              <li class="hover:text-accent"><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="flex items-center gap-2">
+              <p class="font-semibold text-primary">$10.00</p>
+              <i class="fa-solid fa-cart-shopping text-primary"></i>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <!-- drop down -->
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-primary ml-4">
+                <i class="fa-solid fa-bars "></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow right-0 "
+              >
+                <li><a>Home</a></li>
+                <li><a>Everything</a></li>
+                <li><a>Groceries</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+             
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
